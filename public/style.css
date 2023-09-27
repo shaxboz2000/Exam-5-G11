@@ -1,0 +1,110 @@
+:root{
+  --green : #07e73761;
+  --yellow :#f5ba4359;
+  --blue : #3d8eff55;
+  --dark : #333333;
+  --light: #FFF;
+  --middle-dark:#45454578;
+  --light-drek :#636262;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(../images/ss.jpg);
+  background-size: 1550px 1400px;
+  color: #fff;
+  user-select: none;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  height: max-content;
+}
+.board{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  gap: 10px;
+  width: 220px;
+  height: 100%;
+  background: var(--middle-dark);
+  
+}
+.header-todo{
+  background: var(--blue);
+  width: 220px;
+  height: 50px;  
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.header-progress{
+  background:var(--yellow) ;
+  width: 220px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.header-done{
+  background:var(--green) ;
+  width: 220px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.card1, .card{
+  height: 60px;
+  width: 200px;
+  background: var(--light-drek) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+}
+.btn{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 90px;
+  height: 30px;
+  background: #04fce79d;
+  border: none;
+  border-radius: 5px;
+  color: var(--light);
+}
+
+
+.todo-board, .progress-board, .done-board{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+  height: auto;
+}
